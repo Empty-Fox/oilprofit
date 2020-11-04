@@ -1,0 +1,775 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description">
+    <title>Газпром</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/intgrtn.css">
+    <link rel="icon " href="">
+    <script src="js/jquery.min.js"></script>
+    <script>
+        window.intgrtnInit = function () {
+            var path = "index.html";
+            if (window.location.pathname.split("index.html")[1]) {
+                path = "/" + window.location.pathname.split("index.html")[1] + "/";
+            }
+            window.intgrtn.setOptions({
+                server: {
+                    endpoint: "/intgrtn",
+                    ignoreProjectEndpoint: true
+                },
+                cookies: {
+                    path: path
+                },
+            });
+        };
+        (function (d) {
+            if (window.intgrtn) {
+                return;
+            }
+            var s = d.createElement("script");
+            var date = new Date();
+            s.src = "js/steps.js";
+            d.getElementsByTagName("head")[0].appendChild(s);
+        }(document));
+    </script>
+
+
+    <style>
+        .sub_container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding-top: 50px;
+        }
+
+        .sub_container ul li a {
+            color: rgb(254, 213, 48);
+        }
+
+        .sub_container ul li:before {
+            content: '';
+            width: 10px;
+            height: 10px;
+            display: block;
+            border-radius: 100%;
+            position: absolute;
+            left: -25px;
+            top: 7px;
+            background-color: rgb(254, 213, 48);
+        }
+
+        .sub_container ul li {
+            color: #000;
+            font-size: 20px;
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        @media all and (max-width: 768px) {
+            .sub_container ul li {
+                font-size: 16px;
+            }
+
+            .sub_container ul {
+                margin-top: 30px;
+            }
+
+            .sub_container {
+                padding: 0 30px;
+            }
+        }
+    </style>
+
+
+    <script>
+        $('.intgrtn-input-phone').intlTelInput({
+            allowDropdown: true,
+            autoPlaceholder: 'polite',
+            initialCountry: 'ua'
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="hover-modal"></div>
+    <div id="popup_custom" class="popup_custom" style="visibility: hidden;">
+        <div class="popup_overlay"></div>
+        <a class="close_button">×</a>
+        <div class="popup_inner">
+            <div class="popup_content">
+                <div class="popup_content_inner">
+                    <div class="popup-content-wrapper">
+                        <div class="popup-header">
+                            <div class="title">
+                                Только что вы совершили БОЛЬШУЮ ошибку…
+                            </div>
+                            <div class="subtitle">
+                                Это ваш <b>ПОСЛЕДНИЙ ШАНС </b> присоединиться к <b><i>OilProfit</i></b>
+                                и обеспечить свое финансовое будущее.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup-form-wrapper">
+                        <div class="form-container-unique popup-signup-form-wrapper">
+                            <div class="form-block-2 whitee ">
+                                <form class="contact_form gtm-popup-steps-land" id="myform">
+                                    <div class="preloader"></div>
+                                    <p>Бесплатная консультация
+                                        <b>личного</b> эксперта:</p>
+                                    <div data-intgrtn-form-signup-3-steps="" data-intgrtn-placeholder-first-name="Имя"
+                                        data-intgrtn-placeholder-last-name="Фамилия"
+                                        data-intgrtn-placeholder-email="Email"
+                                        data-intgrtn-placeholder-password="Пароль"
+                                        data-intgrtn-fields-password-verbose-errors-enabled="1"
+                                        data-intgrtn-fields-checkbox-agree-terms-show="1"
+                                        data-intgrtn-on-success-auto-redirect="0"
+                                        data-intgrtn-label-checkbox-agree-terms="Я согласен с 
+                                            <a data-intgrtn-link-agreements=&quot;1&quot; href=__.html class=&quot;&quot;>Клиентским соглашением</a>. 
+                                            Мне больше 18 лет">
+                                        <form name="intgrtnFormSignup3Steps" novalidate=""
+                                            class="intgrtn-form-signup-3-steps">
+                                            <input type="hidden" name="click_id" value="">
+                                            <input type="hidden" name="pid" value="">
+                                            <input type="hidden" name="country" value="UA">
+                                            <input type="hidden" name="call_code" value="+380">
+                                            <div class="intgrtn-loader-holder">
+                                                <div class="intgrtn-loader-text-holder">
+                                                    <div class="intgrtn-lds-dual-ring"></div>
+                                                    <div class="intgrtn-loader-text">Loading...</div>
+                                                </div>
+                                            </div>
+                                            <div class="intgrtn-steps-navigation">
+                                                <div
+                                                    class="intgrtn-steps-navigation-item intgrtn-steps-navigation-item-1 intgrtn-active">
+                                                    1</div>
+                                                <div
+                                                    class="intgrtn-steps-navigation-item intgrtn-steps-navigation-item-2">
+                                                    2</div>
+                                                <div
+                                                    class="intgrtn-steps-navigation-item intgrtn-steps-navigation-item-3">
+                                                    3</div>
+                                            </div>
+                                            <div class="intgrtn-steps-holder">
+                                                <div
+                                                    class="intgrtn-step intgrtn-step-1 intgrtn-active intgrtn-submitted">
+                                                    <div
+                                                        class="intgrtn-input-holder intgrtn-input-holder-first-name intgrtn-invalid">
+                                                        <input class="intgrtn-input intgrtn-invalid" type="text"
+                                                            name="first_name" placeholder="Имя" value="" required="">
+                                                        <div class="intgrtn-input-message-error">Поле имя обязательно
+                                                            для заполнения</div>
+                                                    </div>
+                                                    <div
+                                                        class="intgrtn-input-holder intgrtn-input-holder-last-name intgrtn-invalid">
+                                                        <input class="intgrtn-input intgrtn-invalid" type="text"
+                                                            name="last_name" placeholder="Фамилия" value="" required="">
+                                                        <div class="intgrtn-input-message-error">Поле фамилия
+                                                            обязательно для заполнения</div>
+                                                    </div>
+                                                    <div
+                                                        class="intgrtn-input-holder intgrtn-input-holder-email intgrtn-invalid">
+                                                        <input class="intgrtn-input intgrtn-invalid" type="email"
+                                                            name="email" placeholder="Email" value="" required="">
+                                                        <div class="intgrtn-input-message-error">Поле email обязательно
+                                                            для заполнения</div>
+                                                        <div class="intgrtn-input-message-error">Поле email должно быть
+                                                            действительным электронным адресом</div>
+                                                    </div>
+                                                    <div class="intgrtn-btn-go-to-step-holder"><button
+                                                            class="intgrtn-btn-go-to-step" type="button">Хочу
+                                                            доступ</button></div>
+                                                </div>
+                                                <div class="intgrtn-step intgrtn-step-2">
+
+                                                    <div class="intgrtn-btn-go-to-step-holder"><button
+                                                            class="intgrtn-btn-go-to-step" type="button">Хочу
+                                                            доступ</button></div>
+                                                </div>
+                                                <div class="intgrtn-step intgrtn-step-3">
+                                                    <div class="col-xs-12 phone-hint call-back-lady">
+                                                        <div class="phoneInfo ">
+                                                            <h5>ВВЕДИТЕ СВОЙ НОМЕР ТЕЛЕФОНА:</h5>
+                                                            <p>
+                                                                Почему это важно?<br> Мы свяжемся с вами в ближайшее
+                                                                время, чтобы объяснить ваш следующий шаг и как получить
+                                                                вашу первую прибыль сегодня.
+                                                            </p>
+                                                        </div>
+                                                        <img src="images/girl-micro.gif" alt="Contact manager"
+                                                            class="images-contact_manager">
+                                                    </div>
+                                                    <div class="intgrtn-input-holder intgrtn-input-holder-phone">
+                                                        <input class="intgrtn-input intgrtn-input-phone" type="tel"
+                                                            name="phone">
+                                                    </div>
+                                                    <div
+                                                        class="intgrtn-input-holder intgrtn-input-holder-checkbox-agree-terms">
+                                                        <label class="intgrtn-checkbox-label-agree-terms">
+                                                            <input
+                                                                class="intgrtn-checkbox intgrtn-input-checkbox-agree-terms"
+                                                                type="checkbox" name="checkboxAgreeTerms" placeholder=""
+                                                                required="">
+                                                            <span class="intgrtn-checkbox-label-agree-terms-text">Я
+                                                                согласен с
+                                                                <a data-intgrtn-link-agreements="1" href="#"
+                                                                    class="">Клиентским соглашением</a>. Мне больше 18
+                                                                лет
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="intgrtn-btn-submit-holder"><button
+                                                            class="intgrtn-btn-submit" type="submit">Хочу
+                                                            доступ</button></div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <section id="section1">
+        <header>
+            <div class="container">
+                <a onclick="false" class="logo">
+                    <img src="images/logo_oilprofit.png">
+                </a>
+            </div>
+        </header>
+        <div class="container registration-section-wrapper">
+            <div class="title_page">
+                <h1><b>Инвестируйте</b> в нефть и получайте прибыль уже сейчас</h1>
+
+            </div>
+
+            <form class="contact_form gtm-main-steps-land" id="myform2">
+                <div class="preloader"></div>
+                <p>Бесплатная консультация
+                    <b>личного</b> эксперта:</p>
+                <div class="main-signup-form-wrapper">
+                    <div data-intgrtn-form-signup-3-steps="" data-intgrtn-placeholder-first-name="Имя"
+                        data-intgrtn-placeholder-last-name="Фамилия" data-intgrtn-placeholder-email="Email"
+                        data-intgrtn-placeholder-password="Пароль"
+                        data-intgrtn-fields-password-verbose-errors-enabled="1"
+                        data-intgrtn-fields-checkbox-agree-terms-show="1" data-intgrtn-on-success-auto-redirect="0"
+                        data-intgrtn-label-checkbox-agree-terms="Я согласен с 
+                        <a data-intgrtn-link-agreements=&quot;1&quot; href=__.html class=&quot;&quot;>Клиентским соглашением</a>. 
+                        Мне больше 18 лет">
+                        <form name="intgrtnFormSignup3Steps" novalidate="" class="intgrtn-form-signup-3-steps">
+                            <div class="intgrtn-loader-holder">
+                                <div class="intgrtn-loader-text-holder">
+                                    <div class="intgrtn-lds-dual-ring"></div>
+                                    <div class="intgrtn-loader-text">Loading...</div>
+                                </div>
+                            </div>
+                            <div class="intgrtn-steps-navigation">
+                                <div
+                                    class="intgrtn-steps-navigation-item intgrtn-steps-navigation-item-1 intgrtn-active">
+                                    1</div>
+                                <div class="intgrtn-steps-navigation-item intgrtn-steps-navigation-item-2">2</div>
+                                <div class="intgrtn-steps-navigation-item intgrtn-steps-navigation-item-3">3</div>
+                            </div>
+                            <div class="intgrtn-steps-holder">
+                                <div class="intgrtn-step intgrtn-step-1 intgrtn-active intgrtn-submitted">
+                                    <div class="intgrtn-input-holder intgrtn-input-holder-first-name intgrtn-invalid">
+                                        <input class="intgrtn-input intgrtn-invalid" type="text" name="first_name"
+                                            placeholder="Имя" value="" required="">
+                                        <div class="intgrtn-input-message-error">Поле имя обязательно для заполнения
+                                        </div>
+                                    </div>
+                                    <div class="intgrtn-input-holder intgrtn-input-holder-last-name intgrtn-invalid">
+                                        <input class="intgrtn-input intgrtn-invalid" type="text" name="last_name"
+                                            placeholder="Фамилия" value="" required="">
+                                        <div class="intgrtn-input-message-error">Поле фамилия обязательно для заполнения
+                                        </div>
+                                    </div>
+                                    <div class="intgrtn-input-holder intgrtn-input-holder-email intgrtn-invalid">
+                                        <input class="intgrtn-input intgrtn-invalid" type="email" name="email"
+                                            placeholder="Email" value="" required="">
+                                        <div class="intgrtn-input-message-error">Поле email обязательно для заполнения
+                                        </div>
+                                        <div class="intgrtn-input-message-error">Поле email должно быть действительным
+                                            электронным
+                                            адресом</div>
+                                    </div>
+                                    <div class="intgrtn-btn-go-to-step-holder">
+                                        <button class="intgrtn-btn-go-to-step" type="button">Хочу доступ</button>
+                                    </div>
+                                </div>
+                                <div class="intgrtn-step intgrtn-step-2">
+                                    <div
+                                        class="intgrtn-input-holder intgrtn-input-holder-password has-btn-generate-password">
+                                        <div class="intgrtn-btn-generate-password-holder">
+                                            <div class="intgrtn-input-group">
+                                                <input class="intgrtn-input" data-intgrtn-tooltip="" name="password"
+                                                    placeholder="Пароль" required="" type="text">
+                                                <div class="intgrtn-password-eye-icon intgrtn-visible"></div>
+                                            </div><button class="intgrtn-btn-generate-password"
+                                                type="button">Generate</button>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="intgrtn-input-holder intgrtn-input-holder-password has-btn-generate-password">
+                                        <div class="intgrtn-btn-generate-password-holder">
+                                            <div class="intgrtn-input-group"><input class="intgrtn-input"
+                                                    data-intgrtn-tooltip="" name="password" placeholder="Пароль"
+                                                    required="" type="text">
+                                                <div class="intgrtn-password-eye-icon intgrtn-visible"></div>
+                                            </div><button class="intgrtn-btn-generate-password"
+                                                type="button">Generate</button>
+                                        </div>
+                                    </div>
+                                    <div class="intgrtn-input-holder intgrtn-input-holder-password-confirm">
+                                        <div class="intgrtn-input-group">
+                                            <input class="intgrtn-input" name="passwordConfirm"
+                                                placeholder="Confirm Password" required="" type="text">
+                                            <div class="intgrtn-password-eye-icon intgrtn-visible"></div>
+                                        </div>
+                                        <div class="intgrtn-input-message-error-verbose">
+                                            <div class="intgrtn-single-message intgrtn-untouched"
+                                                data-intgrtn-message-id="password6To12Chars">Должен быть длиной 6-12
+                                                символов.</div>
+                                            <div class="intgrtn-single-message intgrtn-untouched"
+                                                data-intgrtn-message-id="passwordRegExp1Lowercase">Должен содержать как
+                                                минимум 1 строчную букву.</div>
+                                            <div class="intgrtn-single-message intgrtn-untouched"
+                                                data-intgrtn-message-id="passwordRegExp1Uppercase">Должен содержать как
+                                                минимум 1 заглавную букву.</div>
+                                            <div class="intgrtn-single-message intgrtn-untouched"
+                                                data-intgrtn-message-id="passwordRegExpNoSpecialChars">Не должен
+                                                содержать специальных символов.</div>
+                                            <div class="intgrtn-single-message intgrtn-untouched"
+                                                data-intgrtn-message-id="passwordRegExpNumber">Должен содержать хотя бы
+                                                1 цифру.</div>
+                                            <div class="intgrtn-single-message intgrtn-untouched"
+                                                data-intgrtn-message-id="passwordRegExpLetter">Должен содержать хотя бы
+                                                1 букву.</div>
+                                        </div>
+                                    </div>
+                                    <div class="intgrtn-btn-go-to-step-holder">
+                                        <button class="intgrtn-btn-go-to-step" type="button">Хочу доступ</button></div>
+                                </div>
+                                <div class="intgrtn-step intgrtn-step-3">
+                                    <div class="col-xs-12 phone-hint call-back-lady">
+                                        <div class="phoneInfo ">
+                                            <h5>ВВЕДИТЕ СВОЙ НОМЕР ТЕЛЕФОНА:</h5>
+                                            <p>
+                                                Почему это важно?<br> Мы свяжемся с вами в ближайшее время, чтобы
+                                                объяснить ваш следующий шаг и как получить вашу первую прибыль сегодня.
+                                            </p>
+                                        </div>
+                                        <img src="images/girl-micro.gif" alt="Contact manager"
+                                            class="images-contact_manager">
+                                    </div>
+                                    <div class="intgrtn-input-holder intgrtn-input-holder-phone">
+                                        <div class="intgrtn-input-group">
+                                            <input
+                                                class="intgrtn-input intgrtn-input-area-code intgrtn-input-area-code-flags"
+                                                type="text" name="areaCode" placeholder="Area Code" value=""
+                                                data-country-code="" required=""><input
+                                                class="intgrtn-input intgrtn-input-phone" type="text" name="phone"
+                                                size="1" placeholder="" value="" required=""></div>
+                                    </div>
+                                    <div class="intgrtn-input-holder intgrtn-input-holder-checkbox-agree-terms">
+                                        <label class="intgrtn-checkbox-label-agree-terms">
+                                            <input class="intgrtn-checkbox intgrtn-input-checkbox-agree-terms"
+                                                type="checkbox" name="checkboxAgreeTerms" placeholder=""
+                                                required=""><span class="intgrtn-checkbox-label-agree-terms-text">Я
+                                                согласен с
+                                                <a data-intgrtn-link-agreements="1" href="#" class="">Клиентским
+                                                    соглашением</a>. Мне больше 18 лет</span>
+                                        </label></div>
+                                    <div class="intgrtn-btn-submit-holder"><button class="intgrtn-btn-submit"
+                                            type="submit">Хочу доступ</button></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </section>
+    <section id="section11">
+        <div class="section11_1">
+            <h2><span>OilProfit </span>одна из крупнейших публичных вертикально интегрированных нефтегазовых компаний в
+                мире, на долю которой приходится около 2%
+                мировой добычи нефти и около 1% доказанных запасов углеводородов.
+                Наша компания открыла доступ к акциям для обычных россиян. Подробнее о нас в новостях:</h2>
+            <div class="section11_1_1">
+                <iframe class="iframe-holder"
+                    src="https://www.youtube.com/embed/etTB6sAlk0A?mute=0&amp;autoplay=1&amp;controls=1&amp;disablekb=0&amp;loop=1&amp;modestbranding=1&amp;rel=0&amp;showinfo=0&amp;playlist=etTB6sAlk0A"
+                    frameborder="0" allowfullscreen=""></iframe>
+            </div>
+            <div style="clear: right;"></div>
+        </div>
+        <div class="container">
+            <h2 class="title">Что нужно сделать, чтобы начать зарабатывать на проектах OilProfit уже сейчас?</h2>
+            <div class="sub_container">
+                <ul>
+                    <li><a class="anchor" href="#section1">Зарегистрироваться на данном сайте в форме выше</a></li>
+                    <li>Дождаться звонка от консультанта нашей компании и подтвердить регистрацию</li>
+                    <li>Внести желаемую сумму инвестиции на счет и уже через 30 дней получить первую прибыль</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="section2">
+        <div class="container">
+            <h2 class="title">Почему это выгодно для обычных граждан</h2>
+            <div class="list_items">
+                <div class="item">
+                    <svg version="1.1" id="Capa_1" fill="#000" xmlns="http://www.w3.org/2000/svg" width="130px"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 494.3 494.3"
+                        style="enable-background:new 0 0 494.3 494.3;" xml:space="preserve">
+                        <g>
+                            <g>
+                                <path d="M416.163,313.3V136.2c0-5.5-4.5-9.3-10-9.3h-38.7c-5.5,0-10.3,3.8-10.3,9.3V296c-6.4,0.2-12.8,1-19,2.5V188.4
+                                    c0-5.5-4.7-9.5-10.2-9.5h-38.7c-5.5,0-10.1,3.9-10.1,9.5v149.3c-11.9,16.7-18.3,36.8-18.2,57.4c0,54.8,44.4,99.2,99.1,99.2
+                                    c54.8,0,99.2-44.4,99.2-99.1C459.263,362.4,443.163,331.8,416.163,313.3z M377.163,146.9h19v155.8c-6.1-2.4-12.5-4.2-19-5.2V146.9
+                                    z M299.163,198.9h19v106.5c-6.7,3.1-13.1,6.9-19,11.4V198.9z M428.263,435.4c-14.3,24.1-40.2,38.8-68.1,38.8
+                                    c-43.7,0-79.1-35.5-79.1-79.1c0-32,19.3-60.9,48.9-73.1c1.2-0.2,2.3-0.7,3.3-1.3c8.6-3.2,17.8-4.8,27-4.8c2.1,0,4.1,0.1,6.2,0.3
+                                    h0.1c12,0.9,23.7,4.6,34,10.8C438.162,349.3,450.563,397.8,428.263,435.4z"></path>
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <path d="M360.263,387c-7,0-12.6-5.6-12.6-12.6s5.5-12.6,12.5-12.7c7,0,12.6,5.7,12.6,12.6c0,5.5,4.5,10,10,10
+                                    c5.6,0,10.1-4.4,10.2-10c0-13.4-8.2-25.5-20.7-30.4v-8.3c0-5.5-4.5-10-10-10s-10,4.5-10,10v7.2c-17.4,4.5-27.9,22.3-23.4,39.7
+                                    c3.6,14.4,16.5,24.4,31.3,24.4c6.9,0,12.5,5.7,12.5,12.6c0,6.9-5.7,12.5-12.6,12.5c-6.9,0-12.5-5.7-12.5-12.6c0-5.5-4.5-10-10-10
+                                    s-9.9,4.4-9.8,9.9v0.1c0.1,14.8,10.1,27.8,24.4,31.5v4.5c0,5.5,4.5,10,10,10s10-4.5,10-10v-5.5c16.8-6.6,25-25.5,18.5-42.2
+                                    C385.763,395.2,373.663,387,360.263,387z"></path>
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <path d="M171.163,258.9h-39c-5.5,0-10,4.5-10,10v157c0,5.5,4.5,10,10,10h39c5.5,0,10-4.5,10-10v-157
+                                    C181.163,263.4,176.663,258.9,171.163,258.9z M161.163,416.9h-19v-138h19V416.9z">
+                                </path>
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <path d="M250.163,235.9h-39c-5.5,0-10,4.5-10,10v181c0,5.5,4.5,10,10,10h39c5.5,0,10-4.5,10-10v-181
+                                    C260.163,240.4,255.663,235.9,250.163,235.9z M240.163,416.9h-19v-161h19V416.9z">
+                                </path>
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <path d="M92.163,344.9h-39c-5.5,0-10,4.5-10,10v71c0,5.5,4.5,10,10,10h39c5.5,0,10-4.5,10-10v-71
+                                    C102.163,349.4,97.663,344.9,92.163,344.9z M82.163,416.9h-19v-52h19V416.9z"></path>
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <path d="M414.663,0l-68.4,0.1c-5.5-0.1-10,4.4-10.1,9.9s4.4,10,9.9,10.1c0.1,0,0.1,0,0.2,0l44.3-0.1l-108.5,108.1l-37.9-37.6
+                                    c-1.9-1.8-4.5-2.7-7.1-2.6c-2.6-0.1-5.2,0.8-7.1,2.6l-192,192c-3.9,3.9-3.9,10.2,0,14c1.9,1.9,4.4,2.9,7.1,2.9s5.2-1,7.1-2.9
+                                    l185-185l37.9,38.2c1.8,2,4.4,3.1,7.1,3.2c2.7-0.1,5.2-1.3,7.1-3.2l115.4-115.5l-0.1,44.5c0,5.6,4.4,10.1,10,10.3
+                                    c5.6-0.1,10-4.7,10-10.3l0.1-68.6C424.663,4.6,420.163,0,414.663,0z"></path>
+                            </g>
+                        </g>
+                    </svg>
+                    <p>Значительная прибыль при минимальных рисках</p>
+                </div>
+                <div class="item">
+                    <svg width="122" height="122" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M121.404 20.9291L101.071 0.595767C100.69 0.214416 100.173 0.000115163 99.6333 0H38.6333C38.0941 0 37.5769 0.214226 37.1955 0.595549C36.8142 0.976873 36.6 1.49406 36.6 2.03333V10.1667H26.4333C25.8941 10.1667 25.3769 10.3809 24.9956 10.7622C24.6142 11.1435 24.4 11.6607 24.4 12.2V52.8667H18.3C17.7607 52.8667 17.2435 53.0809 16.8622 53.4622C16.4809 53.8435 16.2667 54.3607 16.2667 54.9V61H10.1667C9.62739 61 9.11021 61.2142 8.72888 61.5955C8.34756 61.9769 8.13333 62.4941 8.13333 63.0333V69.1333H2.03333C1.49406 69.1333 0.976873 69.3476 0.595549 69.7289C0.214226 70.1102 0 70.6274 0 71.1667V119.967C0 120.506 0.214226 121.023 0.595549 121.404C0.976873 121.786 1.49406 122 2.03333 122H87.4333C87.9726 122 88.4898 121.786 88.8711 121.404C89.2524 121.023 89.4667 120.506 89.4667 119.967V113.867H119.967C120.506 113.867 121.023 113.652 121.404 113.271C121.786 112.89 122 112.373 122 111.833V22.3667C122 21.8274 121.786 21.3103 121.404 20.9291ZM101.667 6.9418L115.058 20.3333H101.667V6.9418ZM28.4667 14.2333H36.6V52.8667H28.4667V14.2333ZM20.3333 56.9333H101.667V101.667H20.3333V56.9333ZM12.2 65.0667H16.2667V103.7C16.2667 104.239 16.4809 104.756 16.8622 105.138C17.2435 105.519 17.7607 105.733 18.3 105.733H93.5333V109.8H12.2V65.0667ZM85.4 117.933H4.06667V73.2H8.13333V111.833C8.13333 112.373 8.34756 112.89 8.72888 113.271C9.11021 113.652 9.62739 113.867 10.1667 113.867H85.4V117.933ZM117.933 109.8H97.6V105.733H103.7C104.239 105.733 104.756 105.519 105.138 105.138C105.519 104.756 105.733 104.239 105.733 103.7V54.9C105.733 54.3607 105.519 53.8435 105.138 53.4622C104.756 53.0809 104.239 52.8667 103.7 52.8667H40.6667V4.06667H97.6V22.3667C97.6 22.9059 97.8142 23.4231 98.1955 23.8044C98.5769 24.1858 99.0941 24.4 99.6333 24.4H117.933V109.8Z"
+                            fill="black"></path>
+                        <path
+                            d="M26.0278 91.8333C27.1034 91.8333 28.1349 92.2665 28.8955 93.0374C29.6561 93.8084 30.0833 94.8541 30.0833 95.9444C30.0833 96.4896 30.297 97.0125 30.6773 97.3979C31.0575 97.7834 31.5733 98 32.1111 98H88.8889C89.4267 98 89.9425 97.7834 90.3227 97.3979C90.703 97.0125 90.9167 96.4896 90.9167 95.9444C90.9167 94.8541 91.3439 93.8084 92.1045 93.0374C92.8651 92.2665 93.8966 91.8333 94.9722 91.8333C95.51 91.8333 96.0258 91.6168 96.4061 91.2313C96.7864 90.8458 97 90.3229 97 89.7778V69.2222C97 68.6771 96.7864 68.1542 96.4061 67.7687C96.0258 67.3832 95.51 67.1667 94.9722 67.1667C93.8966 67.1667 92.8651 66.7335 92.1045 65.9626C91.3439 65.1916 90.9167 64.1459 90.9167 63.0556C90.9167 62.5104 90.703 61.9875 90.3227 61.6021C89.9425 61.2166 89.4267 61 88.8889 61H32.1111C31.5733 61 31.0575 61.2166 30.6773 61.6021C30.297 61.9875 30.0833 62.5104 30.0833 63.0556C30.0833 64.1459 29.6561 65.1916 28.8955 65.9626C28.1349 66.7335 27.1034 67.1667 26.0278 67.1667C25.49 67.1667 24.9742 67.3832 24.5939 67.7687C24.2136 68.1542 24 68.6771 24 69.2222V89.7778C24 90.3229 24.2136 90.8458 24.5939 91.2313C24.9742 91.6168 25.49 91.8333 26.0278 91.8333ZM46.3056 79.5C46.3056 76.6541 47.138 73.8722 48.6977 71.506C50.2575 69.1397 52.4743 67.2955 55.068 66.2064C57.6617 65.1173 60.5157 64.8324 63.2692 65.3876C66.0226 65.9428 68.5519 67.3132 70.537 69.3255C72.5221 71.3378 73.874 73.9017 74.4217 76.6929C74.9694 79.484 74.6883 82.3772 73.614 85.0064C72.5396 87.6356 70.7203 89.8829 68.386 91.4639C66.0517 93.045 63.3074 93.8889 60.5 93.8889C56.7367 93.8845 53.1288 92.3672 50.4678 89.6697C47.8067 86.9722 46.3098 83.3148 46.3056 79.5ZM87.1186 65.1111C87.4835 66.5322 88.2157 67.8288 89.2398 68.8673C90.2639 69.9057 91.5427 70.6485 92.9444 71.0188V87.9812C91.5427 88.3515 90.2639 89.0943 89.2398 90.1327C88.2157 91.1712 87.4835 92.4678 87.1186 93.8889H71.9448C74.069 92.1595 75.7832 89.969 76.9611 87.4786C78.139 84.9883 78.7504 82.2618 78.7504 79.5C78.7504 76.7382 78.139 74.0117 76.9611 71.5214C75.7832 69.031 74.069 66.8405 71.9448 65.1111H87.1186ZM28.0556 71.0188C29.4573 70.6485 30.7361 69.9057 31.7602 68.8673C32.7843 67.8288 33.5165 66.5322 33.8814 65.1111H49.0552C46.931 66.8405 45.2168 69.031 44.0389 71.5214C42.861 74.0117 42.2496 76.7382 42.2496 79.5C42.2496 82.2618 42.861 84.9883 44.0389 87.4786C45.2168 89.969 46.931 92.1595 49.0552 93.8889H33.8814C33.5165 92.4678 32.7843 91.1712 31.7602 90.1327C30.7361 89.0943 29.4573 88.3515 28.0556 87.9812V71.0188Z"
+                            fill="black"></path>
+                        <path
+                            d="M55 20H51C50.4696 20 49.9609 20.2107 49.5858 20.5858C49.2107 20.9609 49 21.4696 49 22C49 22.5304 49.2107 23.0391 49.5858 23.4142C49.9609 23.7893 50.4696 24 51 24H55C55.5304 24 56.0391 23.7893 56.4142 23.4142C56.7893 23.0391 57 22.5304 57 22C57 21.4696 56.7893 20.9609 56.4142 20.5858C56.0391 20.2107 55.5304 20 55 20Z"
+                            fill="black"></path>
+                        <path
+                            d="M63.0625 24H91.9375C92.4845 24 93.0091 23.7893 93.3959 23.4142C93.7827 23.0391 94 22.5304 94 22C94 21.4696 93.7827 20.9609 93.3959 20.5858C93.0091 20.2107 92.4845 20 91.9375 20H63.0625C62.5155 20 61.9909 20.2107 61.6041 20.5858C61.2173 20.9609 61 21.4696 61 22C61 22.5304 61.2173 23.0391 61.6041 23.4142C61.9909 23.7893 62.5155 24 63.0625 24Z"
+                            fill="black"></path>
+                        <path
+                            d="M55 12H51C50.4696 12 49.9609 12.2107 49.5858 12.5858C49.2107 12.9609 49 13.4696 49 14C49 14.5304 49.2107 15.0391 49.5858 15.4142C49.9609 15.7893 50.4696 16 51 16H55C55.5304 16 56.0391 15.7893 56.4142 15.4142C56.7893 15.0391 57 14.5304 57 14C57 13.4696 56.7893 12.9609 56.4142 12.5858C56.0391 12.2107 55.5304 12 55 12Z"
+                            fill="black"></path>
+                        <path
+                            d="M63.0625 16H91.9375C92.4845 16 93.0091 15.7893 93.3959 15.4142C93.7827 15.0391 94 14.5304 94 14C94 13.4696 93.7827 12.9609 93.3959 12.5858C93.0091 12.2107 92.4845 12 91.9375 12H63.0625C62.5155 12 61.9909 12.2107 61.6041 12.5858C61.2173 12.9609 61 13.4696 61 14C61 14.5304 61.2173 15.0391 61.6041 15.4142C61.9909 15.7893 62.5155 16 63.0625 16Z"
+                            fill="black"></path>
+                        <path
+                            d="M55 28H51C50.4696 28 49.9609 28.2107 49.5858 28.5858C49.2107 28.9609 49 29.4696 49 30C49 30.5304 49.2107 31.0391 49.5858 31.4142C49.9609 31.7893 50.4696 32 51 32H55C55.5304 32 56.0391 31.7893 56.4142 31.4142C56.7893 31.0391 57 30.5304 57 30C57 29.4696 56.7893 28.9609 56.4142 28.5858C56.0391 28.2107 55.5304 28 55 28Z"
+                            fill="black"></path>
+                        <path
+                            d="M61 30C61 30.5304 61.2151 31.0391 61.598 31.4142C61.9809 31.7893 62.5002 32 63.0417 32H107.958C108.5 32 109.019 31.7893 109.402 31.4142C109.785 31.0391 110 30.5304 110 30C110 29.4696 109.785 28.9609 109.402 28.5858C109.019 28.2107 108.5 28 107.958 28H63.0417C62.5002 28 61.9809 28.2107 61.598 28.5858C61.2151 28.9609 61 29.4696 61 30Z"
+                            fill="black"></path>
+                        <path
+                            d="M55 37H51C50.4696 37 49.9609 37.2107 49.5858 37.5858C49.2107 37.9609 49 38.4696 49 39C49 39.5304 49.2107 40.0391 49.5858 40.4142C49.9609 40.7893 50.4696 41 51 41H55C55.5304 41 56.0391 40.7893 56.4142 40.4142C56.7893 40.0391 57 39.5304 57 39C57 38.4696 56.7893 37.9609 56.4142 37.5858C56.0391 37.2107 55.5304 37 55 37Z"
+                            fill="black"></path>
+                        <path
+                            d="M107.958 37H63.0417C62.5002 37 61.9809 37.2107 61.598 37.5858C61.2151 37.9609 61 38.4696 61 39C61 39.5304 61.2151 40.0391 61.598 40.4142C61.9809 40.7893 62.5002 41 63.0417 41H107.958C108.5 41 109.019 40.7893 109.402 40.4142C109.785 40.0391 110 39.5304 110 39C110 38.4696 109.785 37.9609 109.402 37.5858C109.019 37.2107 108.5 37 107.958 37Z"
+                            fill="black"></path>
+                        <path
+                            d="M55 45H51C50.4696 45 49.9609 45.2107 49.5858 45.5858C49.2107 45.9609 49 46.4696 49 47C49 47.5304 49.2107 48.0391 49.5858 48.4142C49.9609 48.7893 50.4696 49 51 49H55C55.5304 49 56.0391 48.7893 56.4142 48.4142C56.7893 48.0391 57 47.5304 57 47C57 46.4696 56.7893 45.9609 56.4142 45.5858C56.0391 45.2107 55.5304 45 55 45Z"
+                            fill="black"></path>
+                        <path
+                            d="M107.958 45H63.0417C62.5002 45 61.9809 45.2107 61.598 45.5858C61.2151 45.9609 61 46.4696 61 47C61 47.5304 61.2151 48.0391 61.598 48.4142C61.9809 48.7893 62.5002 49 63.0417 49H107.958C108.5 49 109.019 48.7893 109.402 48.4142C109.785 48.0391 110 47.5304 110 47C110 46.4696 109.785 45.9609 109.402 45.5858C109.019 45.2107 108.5 45 107.958 45Z"
+                            fill="black"></path>
+                        <path
+                            d="M63 91V88.632C64.3334 88.1624 65.4575 87.236 66.1733 86.0169C66.8891 84.7979 67.1503 83.3649 66.9108 81.9716C66.6712 80.5784 65.9463 79.315 64.8645 78.405C63.7826 77.495 62.4137 76.9973 61 77C60.6044 77 60.2178 76.8827 59.8889 76.6629C59.56 76.4432 59.3036 76.1308 59.1522 75.7654C59.0009 75.3999 58.9613 74.9978 59.0384 74.6098C59.1156 74.2219 59.3061 73.8655 59.5858 73.5858C59.8655 73.3061 60.2219 73.1156 60.6098 73.0384C60.9978 72.9613 61.3999 73.0009 61.7654 73.1522C62.1308 73.3036 62.4432 73.56 62.6629 73.8889C62.8827 74.2178 63 74.6044 63 75C63 75.5304 63.2107 76.0391 63.5858 76.4142C63.9609 76.7893 64.4696 77 65 77C65.5304 77 66.0391 76.7893 66.4142 76.4142C66.7893 76.0391 67 75.5304 67 75C66.9949 73.7635 66.6078 72.5587 65.8918 71.5506C65.1758 70.5425 64.1658 69.7802 63 69.368V67C63 66.4696 62.7893 65.9609 62.4142 65.5858C62.0391 65.2107 61.5304 65 61 65C60.4696 65 59.9609 65.2107 59.5858 65.5858C59.2107 65.9609 59 66.4696 59 67V69.368C57.6666 69.8376 56.5425 70.764 55.8267 71.9831C55.1109 73.2021 54.8497 74.6351 55.0892 76.0284C55.3288 77.4216 56.0537 78.685 57.1355 79.595C58.2174 80.505 59.5863 81.0027 61 81C61.3956 81 61.7822 81.1173 62.1111 81.3371C62.44 81.5568 62.6964 81.8692 62.8478 82.2346C62.9991 82.6001 63.0387 83.0022 62.9616 83.3902C62.8844 83.7781 62.6939 84.1345 62.4142 84.4142C62.1345 84.6939 61.7781 84.8844 61.3902 84.9616C61.0022 85.0387 60.6001 84.9991 60.2346 84.8478C59.8692 84.6964 59.5568 84.44 59.3371 84.1111C59.1173 83.7822 59 83.3956 59 83C59 82.4696 58.7893 81.9609 58.4142 81.5858C58.0391 81.2107 57.5304 81 57 81C56.4696 81 55.9609 81.2107 55.5858 81.5858C55.2107 81.9609 55 82.4696 55 83C55.0051 84.2365 55.3922 85.4413 56.1082 86.4494C56.8242 87.4575 57.8342 88.2198 59 88.632V91C59 91.5304 59.2107 92.0391 59.5858 92.4142C59.9609 92.7893 60.4696 93 61 93C61.5304 93 62.0391 92.7893 62.4142 92.4142C62.7893 92.0391 63 91.5304 63 91Z"
+                            fill="black"></path>
+                    </svg>
+
+                    <p>Один из самых доходных активов</p>
+                </div>
+                <div class="item">
+                    <svg width="130" height="130" viewBox="0 0 130 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M92 117H67V121H92V117Z" fill="black"></path>
+                        <path d="M54 38H50V101H54V38Z" fill="black"></path>
+                        <path
+                            d="M125.806 41.9355H117.419V10.4839C117.419 4.70306 112.716 0 106.935 0H52.4194C46.6385 0 41.9355 4.70306 41.9355 10.4839V20.9677H8.3871V44.0323H0V106.935H41.9355V119.516C41.9355 125.297 46.6385 130 52.4194 130H106.935C112.716 130 117.419 125.297 117.419 119.516V88.0645H125.806C128.119 88.0645 130 86.1837 130 83.871V46.129C130 43.8163 128.119 41.9355 125.806 41.9355ZM41.9355 73.7729C41.2771 73.5381 40.5768 73.3871 39.8387 73.3871H35.6452C34.4877 73.3871 33.5484 72.4456 33.5484 71.2903C33.5484 70.135 34.4877 69.1935 35.6452 69.1935H39.8387C40.9961 69.1935 41.9355 70.135 41.9355 71.2903V73.7729ZM41.9355 65.3858C41.2771 65.151 40.5768 65 39.8387 65V60.8064H35.6452V65C32.1771 65 29.3548 67.8223 29.3548 71.2903C29.3548 74.7584 32.1771 77.5806 35.6452 77.5806H39.8387C40.9961 77.5806 41.9355 78.5221 41.9355 79.6774C41.9355 80.8327 40.9961 81.7742 39.8387 81.7742H35.6452C34.4877 81.7742 33.5484 80.8327 33.5484 79.6774H29.3548C29.3548 83.1455 32.1771 85.9677 35.6452 85.9677V90.1613H39.8387V85.9677C40.5768 85.9677 41.2771 85.8168 41.9355 85.5819V93.8327C40.5621 94.1431 39.1656 94.3548 37.7419 94.3548C27.3356 94.3548 18.871 85.8881 18.871 75.4839C18.871 65.0797 27.3356 56.6129 37.7419 56.6129C39.1656 56.6129 40.5621 56.8247 41.9355 57.1371V65.3858ZM41.9355 52.8156C40.5579 52.5619 39.1573 52.4194 37.7419 52.4194C25.025 52.4194 14.6774 62.7669 14.6774 75.4839C14.6774 88.2008 25.025 98.5484 37.7419 98.5484C39.1573 98.5484 40.5579 98.4058 41.9355 98.1521V102.742H4.19355V48.2258H41.9355V52.8156ZM41.9355 44.0323H12.5806V25.1613H41.9355V44.0323ZM125.806 46.129V50.3226H67.0968V46.129H125.806ZM125.806 54.5161V58.7097H67.0968V54.5161H125.806ZM46.129 10.4839C46.129 7.01581 48.9513 4.19355 52.4194 4.19355H106.935C110.404 4.19355 113.226 7.01581 113.226 10.4839V16.7742H46.129V10.4839ZM113.226 119.516C113.226 122.984 110.404 125.806 106.935 125.806H52.4194C48.9513 125.806 46.129 122.984 46.129 119.516V113.226H113.226V119.516ZM113.226 109.032H46.129V20.9677H113.226V41.9355H67.0968C64.784 41.9355 62.9032 43.8163 62.9032 46.129V83.871C62.9032 86.1837 64.784 88.0645 67.0968 88.0645H113.226V109.032ZM67.0968 83.871V62.9032H125.806L125.809 83.871H67.0968Z"
+                            fill="black"></path>
+                        <path d="M81 75H71V79H81V75Z" fill="black"></path>
+                        <path d="M8 52V60H12V56H16V52H8Z" fill="black"></path>
+                        <path d="M17 29V37H21V33H25V29H17Z" fill="black"></path>
+                        <path d="M12 94V90H8V98H16V94H12Z" fill="black"></path>
+                        <path d="M121 75H117V79H121V75Z" fill="black"></path>
+                        <path d="M113 75H109V79H113V75Z" fill="black"></path>
+                        <path d="M54 29H50V33H54V29Z" fill="black"></path>
+                    </svg>
+
+                    <p>Быстрый вывод средств на любую карту банка России</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section3">
+        <div class="container">
+            <div class="text_wrap">
+                <div class="text">
+                    <p>Мы приняли решение передать свои акции в распоряжение компании OilProfit и открыть доступ для
+                        инвестиций от всех граждан.</p>
+                    <img src="images/unnamed.jpg" class="desktop-hidden" alt="">
+                    <p>Дело в том, что ежедневно продукцию Компании покупают миллионы людей более чем в 100 странах
+                        мира,
+                        улучшая качество своей жизни. Более 100 тысяч человек объединяют свои усилия и таланты, чтобы
+                        обеспечить эффективное развитие
+                        Компании и ее передовые позиции на рынке.
+                        По этой причине мы решили увеличить объемы добычи нефти в 4 раза
+                        и привлечь людей со всей России в качестве инвесторов.</p>
+                    <p>Важно помнить, что нефть является невосполнимых природным ресурсом.<strong> Чем меньше она будет
+                            оставаться на нашей планете,
+                            тем дороже она будет стоить.</strong> Таким образом, с течением времени инвестиции в нефть
+                        будут все более привлекательными.
+                        <strong> Все, кто инвестирует в проекты OilProfit,
+                            получают в среднем по 800 долларов дохода ежемесячно и он современем будет только
+                            расти.</strong> </p>
+                </div>
+            </div>
+            <div class="image">
+                <img src="images/unnamed.jpg" alt="">
+                <div class="under_text">
+                    <strong>Вагит Алекперов</strong>
+                    <p>Президент и совладелец ОАО "Лукойл"</p>
+                </div>
+            </div>
+
+        </div>
+        <a href="#section1" class="btn call_to_action submit_form">Подать заявку на сотрудничество с OilProfit</a>
+    </section>
+    <section id="section5">
+        <div class="container">
+            <h2 class="title">Проекты OilProfit, открытые для инвестиций:</h2>
+        </div>
+        <article style="background: url(images/СЕВЕРНЫЙ.jpg) center no-repeat; background-size: cover;">
+            <h3>“СЕВЕРНЫЙ КАСПИЙ”</h3>
+
+            <div class="row">
+               <p> Крупнейшее нефтяное месторождение в российском секторе дна Каспийского моря.
+                Добыча на месторождении поддерживается на проектном уровне 6 млн т нефти в год.</p>
+               
+                    <p>от 100 000 рублей <b>ежемесячно</b></p>
+             
+
+            </div>
+
+
+
+            <a class="btn" href="#section1">Подать заявку на
+                участие в проекте</a>
+        </article>
+        <article style="background: url(images/балтика.jpeg) center no-repeat; background-size: cover;">
+            <h3>“Балтика”</h3>
+            <div class="row">
+               <p>Скважина рекордной длины (7517 м и 7947 м).
+                Месторождение D-41 расположено в пределах юго-восточного участка шельфа Балтийского
+                моря, в 3,2 км от ближайшего берега (Куршская коса), в 5 км от берега в районе НПС
+                Романово и в 24 км от ближайшего порта Пионерский.
+                Начальные геологические запасы нефти в пределах участка недр D41 по категории С1
+                составляют 3,927 млн т, извлекаемый запасы - 2,003 млн т.
+                Запасы растворенного газа по категории С1 составляют 98 млн м3.</p>>
+               
+                    <p>20% <b>гарантированных</b> выплат ежемесячно</p>
+              
+
+            </div>
+            <a class="btn" href="#section1">Подать заявку на
+                участие в проекте</a>
+        </article>
+
+        <article class="imgRow3" style="background: url(images/11593.jpg) center no-repeat; background-size: cover;">
+            <h3>“ЗАПАДНАЯ СИБИРЬ”</h3>
+            <div class="row">
+               <p>Применение современных подходов, обеспечивающих эффективное освоение
+                трудноизвлекаемых
+                запасов, а также мероприятия по оптимизации расходов позволили увеличить проектный
+                уровень добычи
+                нефти на месторождении до 2,5 млн т нефти в год.</p>                
+                    <p>48% <b>гарантированных</b> выплат ежемесячно</p>
+              
+
+            </div>
+
+            <a class="btn" href="#section1">Подать заявку на
+                участие в проекте</a>
+        </article>
+    </section>
+    <footer>
+        <a class="btn" href="#section1"><img src="images/ok.png" alt=""><span><strong>Узнать больше</strong>Абсолютно
+                бесплатно!</span></a>
+        <div class="img_list">
+            <div>
+                <img src="images/visa.png" alt="visa">
+            </div>
+            <div>
+                <img src="images/master.png" alt="master">
+            </div>
+            <div>
+                <img src="images/maestro.png" alt="maestro">
+            </div>
+            <div>
+                <img src="images/yad.png" alt="yad">
+            </div>
+            <div>
+                <img src="images/wm.png" alt="wm">
+            </div>
+            <div>
+                <img src="images/qiwi.png" alt="qiwi">
+            </div>
+            <div>
+                <img src="images/swift.png" alt="swift">
+            </div>
+            <div>
+                <img src="images/london.png" alt="london">
+            </div>
+            <div>
+                <img src="images/dow.png" alt="dow">
+            </div>
+            <div>
+                <img src="images/nasdaq.png" alt="nasdaq">
+            </div>
+            <div>
+                <img src="images/diners.png" alt="diners">
+            </div>
+            <div>
+                <img src="images/deut.png" alt="deut">
+            </div>
+        </div>
+        <div class="license_list">
+            <div>
+                <img src="images/18.png" alt="">
+            </div>
+            <div>
+                <img src="images/100.png" alt="">
+            </div>
+            <div>
+                <img src="images/ssl.png" alt="">
+            </div>
+        </div>
+        <div class="container">
+            <ul class="footer-ul">
+                <li><a data-intgrtn-link-agreements="1" href="#" class="">Веб-сайт соглашение</a></li>
+                <li><a data-intgrtn-link-agreements="2" href="#" class="">Уведомление о рисках</a></li>
+                <li><a data-intgrtn-link-agreements="3" href="#" class="">Политики конфиденциальности</a></li>
+                <li><a data-intgrtn-link-report-abuse="" href="#" class="">Сообщить о нарушении</a></li>
+                <li><a data-intgrtn-link-contact-us="" href="#" class="">Контакты</a></li>
+            </ul>
+            <div class="footerText" data-intgrtn-agreements="" data-intgrtn-type="4">
+                <p>
+                    РЕГУЛИРОВАНИЕ И ПРЕДУПРЕЖДЕНИЕ О ВЫСОКОМ РИСКЕ ИНВЕСТИЦИЙ: 
+                    Торговля на Forex, CFD и криптовалютами носит спекулятивный характер, сопряжена с определенным риском и может не 
+                    подходить для всех инвесторов. Вы можете потерять часть или весь свой инвестированный капитал, поэтому вам не 
+                    следует спекулировать капиталом, который вы не можете позволить себе потерять. Нажмите здесь, чтобы прочитать 
+                    полное предупреждение о рисках. OilProfit RU - это технологическая, маркетинговая и рекламная услуга. 
+                    OilProfit RU не получает и не теряет прибыль на основе результатов вашей торговли и действует как технология, 
+                    маркетинг и рекламные услуги. OilProfit RU не является фирмой финансовых услуг и не действует как фирма 
+                    финансовых услуг, а используется только в качестве маркетингового инструмента сторонними рекламодателями и 
+                    брокерами для привлечения клиентов. Вы обязаны проверить соответствует ли брокер всеми местными правилами и нормами, 
+                    регулируется в юрисдикции вашей страны и имеет право принимать клиентов из вашего местоположения, в котором вы 
+                    находитесь, до того, как вы Вы пополните свой счет у брокера и начинаете торговать с ним. 
+                    Пожалуйста, сообщите о OilProfit RU (нажав «Сообщить о нарушении»), если вы обнаружите, что назначенный вам брокер не 
+                    регулируется в вашей юрисдикции и мы сможем закрыть вашу учетную запись в OilProfit RU.
+                </p>
+                <p>
+                    Мы обязаны сообщать потенциальным инвесторам, что прошлые результаты нашего программного обеспечения не обязательно 
+                    предсказывают будущий результат, поэтому вам не следует спекулировать капиталом, который вы не можете позволить себе 
+                    потерять.
+                </p>
+                <p>
+                    ЗАМЕЧАНИЕ ПО РЕГУЛИРОВАНИЮ США: торговля опционами не регулируется в Соединенных Штатах. OilProfit RU не 
+                    контролируется и не регулируется никакими финансовыми агентствами или агентствами США. Любая нерегулируемая 
+                    торговая деятельность резидентов США считается незаконной. OilProfit RU не принимает клиентов, находящихся на 
+                    территории США. в Соединенных Штатах или имеющий американское гражданство.
+                </p>
+                <p>
+                    РАСКРЫТИЕ РИСКОВ САЙТА: OilProfit RU не несет никакой ответственности за убытки или ущерб в результате 
+                    использования информации, содержащейся на этом веб-сайте; это включает в себя учебные материалы, ценовые 
+                    предложения и графики, а также анализ. Пожалуйста, помните о связанных рисках с торговлей на финансовых рынках; 
+                    никогда не вкладывайте больше денег, чем вы можете рискнуть потерять. Риски, связанные с торговлей Forex, CFD и 
+                    криптовалютами, могут подходить не для всех инвесторов. Gas Master RU не несет ответственности за любые торговые 
+                    убытки, с которыми вы можете столкнуться в результате использования данных, размещенных на этом сайте.
+                </p>
+                <p>
+                    ЮРИДИЧЕСКИЕ ОГРАНИЧЕНИЯ: не ограничиваясь упомянутыми положениями, вы должны понимать, что законы, 
+                    касающиеся финансовых контрактов, различаются во всем мире, и вы обязаны убедиться, что вы должным образом 
+                    соблюдаете любой закон, постановление или директиву в вашей стране проживания в отношении использования Сайта. 
+                    Чтобы избежать каких-либо сомнений, возможность доступа к нашему Сайту не всегда значит, что наши Услуги и / или 
+                    ваша деятельность через Сайт являются законными в соответствии с законами, постановлениями или директивами, 
+                    относящимися к вашей стране проживания.
+                </p>
+                <p>
+                    Обратите внимание, что OilProfit RU получает рекламные сборы за то, что побуждает пользователей открыть счет у 
+                    брокеров / рекламодателей и / или за привлечение трафика на сайт рекламодателя.
+                </p>
+                <p>
+                    Если вы считаете, что попали на эту страницу из-за неправомерных действий и / или вводящей в заблуждение 
+                    информации из рекламы, предварительного лендинга, электронной рассылки или любых других рекламных акций стороннего 
+                    веб-сайта / промоутера, сообщите об этом, нажав  <a data-intgrtn-link-report-abuse="" href="#" class="">СООБЩИТЬ О НАРУШЕНИИ</a>
+                </p>
+                <p>
+                    Мы разместили файлы cookie на вашем компьютере, чтобы вам было удобнее посещать этот сайт. Вы можете изменить 
+                    настройки файлов cookie на своем компьютере в любое время. Использование этого веб-сайта означает ваше согласие с 
+                  
+                    <a data-intgrtn-link-agreements="3" href="privacypolicy.html" target="_blank"> Политикой конфиденциальности</a>  этого веб-сайта.
+                </p>
+                <br>
+                <p>
+                    © 2020 All Rights Reserved - OilProfit RU
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+
+</html>

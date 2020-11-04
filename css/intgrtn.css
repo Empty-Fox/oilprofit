@@ -1,0 +1,200 @@
+body .hidden {
+    display: none !important;
+}
+
+@media all and (max-width: 768px) {
+    body form.contact_form {
+        padding: 40px 10px 30px;
+        margin: auto;
+    }
+}
+
+body .footer-ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+@media all and (max-width: 768px) {
+    body .footer-ul {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
+
+@media all and (max-width: 768px) {
+    body .footer-ul li {
+        padding-right: 15px;
+    }
+}
+
+body .footer-ul li a {
+    text-decoration: underline;
+    color: #7f7f7f;
+}
+
+body .registration-section-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media all and (max-width: 1024px) {
+    body .registration-section-wrapper .title_page {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+body .registration-section-wrapper .gtm-main-steps-land {
+    margin: 150px auto;
+    height: 100%;
+}
+
+@media all and (max-width: 768px) {
+    body .registration-section-wrapper .gtm-main-steps-land {
+        flex: 100%;
+        margin: 20px auto;
+    }
+}
+
+body .iframe-holder {
+    width: 100%;
+    max-width: 770px;
+    height: 400px;
+    margin-top: 20px;
+}
+
+@media all and (max-width: 501px) {
+    body .iframe-holder {
+        height: 190px;
+    }
+}
+
+.main-signup-form-wrapper .intgrtn-steps-navigation,
+.popup-signup-form-wrapper .intgrtn-steps-navigation {
+    display: none;
+}
+
+.main-signup-form-wrapper .intgrtn-form-signup-3-steps .intgrtn-steps-holder .intgrtn-input-holder .intgrtn-input,
+.popup-signup-form-wrapper .intgrtn-form-signup-3-steps .intgrtn-steps-holder .intgrtn-input-holder .intgrtn-input {
+    padding: 9px;
+    border: none;
+    background-color: transparent;
+    display: inline-block;
+    color: #fff;
+    box-sizing: border-box;
+    margin-top: 10px;
+    outline: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid #82817e;
+}
+.popup-signup-form-wrapper .intgrtn-form-signup-3-steps .intgrtn-steps-holder .intgrtn-input-holder .intgrtn-input {
+    color: black;
+}
+.main-signup-form-wrapper .intgrtn-form-signup-3-steps .intgrtn-steps-holder .intgrtn-input-holder .intgrtn-input.intgrtn-area-flags-holder,
+.popup-signup-form-wrapper .intgrtn-form-signup-3-steps .intgrtn-steps-holder .intgrtn-input-holder .intgrtn-input.intgrtn-area-flags-holder {
+    padding: 8px 40px 5px 9px;
+    margin-top: 19px;
+}
+
+.main-signup-form-wrapper .intgrtn-form-signup-3-steps .intgrtn-steps-holder .intgrtn-input-holder .intgrtn-input.intgrtn-input-phone,
+.popup-signup-form-wrapper .intgrtn-form-signup-3-steps .intgrtn-steps-holder .intgrtn-input-holder .intgrtn-input.intgrtn-input-phone {
+    padding: 19px 40px 8px 9px;
+}
+
+.main-signup-form-wrapper .intgrtn-form-signup-3-steps .intgrtn-steps-holder .intgrtn-input-holder .intgrtn-input .intgrtn-areas-dropdown .intgrtn-flag-single-item .intgrtn-area-name,
+.popup-signup-form-wrapper .intgrtn-form-signup-3-steps .intgrtn-steps-holder .intgrtn-input-holder .intgrtn-input .intgrtn-areas-dropdown .intgrtn-flag-single-item .intgrtn-area-name {
+    color: #000;
+}
+
+.main-signup-form-wrapper .intgrtn-form-signup-3-steps .intgrtn-steps-holder .intgrtn-input-holder .intgrtn-input-message-error-verbose .intgrtn-single-message,
+.popup-signup-form-wrapper .intgrtn-form-signup-3-steps .intgrtn-steps-holder .intgrtn-input-holder .intgrtn-input-message-error-verbose .intgrtn-single-message {
+    font-size: 14px;
+}
+
+.main-signup-form-wrapper .intgrtn-form-signup-3-steps .intgrtn-steps-holder .intgrtn-input-holder .intgrtn-input-message-error-verbose .intgrtn-single-message.intgrtn-untouched,
+.popup-signup-form-wrapper .intgrtn-form-signup-3-steps .intgrtn-steps-holder .intgrtn-input-holder .intgrtn-input-message-error-verbose .intgrtn-single-message.intgrtn-untouched {
+    color: #fff;
+}
+
+.main-signup-form-wrapper .intgrtn-form-signup-3-steps .intgrtn-steps-holder .intgrtn-input-holder .intgrtn-btn-generate-password,
+.popup-signup-form-wrapper .intgrtn-form-signup-3-steps .intgrtn-steps-holder .intgrtn-input-holder .intgrtn-btn-generate-password {
+    background-color: #2f45b3;
+    max-width: 280px;
+    color: #fff;
+    font-weight: 300;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 100px;
+    font-size: 14px;
+    font-family: "Gotham Pro";
+    font-weight: 400;
+}
+
+.main-signup-form-wrapper .intgrtn-form-signup-3-steps .intgrtn-steps-holder .intgrtn-input-holder .intgrtn-btn-generate-password:hover,
+.popup-signup-form-wrapper .intgrtn-form-signup-3-steps .intgrtn-steps-holder .intgrtn-input-holder .intgrtn-btn-generate-password:hover {
+    background-color: #2f45b3;
+}
+
+.main-signup-form-wrapper .intgrtn-form-signup-3-steps .intgrtn-steps-holder .intgrtn-input-holder .intgrtn-checkbox-label-agree-terms .intgrtn-input-checkbox-agree-terms,
+.popup-signup-form-wrapper .intgrtn-form-signup-3-steps .intgrtn-steps-holder .intgrtn-input-holder .intgrtn-checkbox-label-agree-terms .intgrtn-input-checkbox-agree-terms {
+    width: unset;
+}
+
+.main-signup-form-wrapper .intgrtn-form-signup-3-steps .intgrtn-steps-holder .intgrtn-input-holder .intgrtn-checkbox-label-agree-terms .intgrtn-checkbox-label-agree-terms-text,
+.popup-signup-form-wrapper .intgrtn-form-signup-3-steps .intgrtn-steps-holder .intgrtn-input-holder .intgrtn-checkbox-label-agree-terms .intgrtn-checkbox-label-agree-terms-text {
+    color: #fff;
+    text-align: left;
+    max-width: 100%;
+    margin: 0;
+    font-weight: normal;
+}
+
+.main-signup-form-wrapper .intgrtn-form-signup-3-steps .intgrtn-steps-holder .intgrtn-input-holder .intgrtn-checkbox-label-agree-terms .intgrtn-checkbox-label-agree-terms-text a,
+.popup-signup-form-wrapper .intgrtn-form-signup-3-steps .intgrtn-steps-holder .intgrtn-input-holder .intgrtn-checkbox-label-agree-terms .intgrtn-checkbox-label-agree-terms-text a {
+    color: #e5c02b;
+}
+
+.main-signup-form-wrapper .intgrtn-form-signup-3-steps .intgrtn-steps-holder .intgrtn-input-holder.intgrtn-input-holder-checkbox-agree-terms.intgrtn-invalid .intgrtn-checkbox-label-agree-terms-text,
+.popup-signup-form-wrapper .intgrtn-form-signup-3-steps .intgrtn-steps-holder .intgrtn-input-holder.intgrtn-input-holder-checkbox-agree-terms.intgrtn-invalid .intgrtn-checkbox-label-agree-terms-text {
+    color: #F44336;
+}
+
+.main-signup-form-wrapper .intgrtn-form-signup-3-steps .intgrtn-steps-holder .intgrtn-input-holder .intgrtn-btn-generate-password-holder,
+.popup-signup-form-wrapper .intgrtn-form-signup-3-steps .intgrtn-steps-holder .intgrtn-input-holder .intgrtn-btn-generate-password-holder {
+    flex-wrap: nowrap;
+}
+
+.main-signup-form-wrapper .intgrtn-form-signup-3-steps .intgrtn-steps-holder .intgrtn-input-holder .intgrtn-input-message-error-verbose,
+.popup-signup-form-wrapper .intgrtn-form-signup-3-steps .intgrtn-steps-holder .intgrtn-input-holder .intgrtn-input-message-error-verbose {
+    margin: 10px;
+}
+
+.main-signup-form-wrapper .intgrtn-form-signup-3-steps .intgrtn-btn-go-to-step,
+.main-signup-form-wrapper .intgrtn-form-signup-3-steps .intgrtn-btn-submit,
+.popup-signup-form-wrapper .intgrtn-form-signup-3-steps .intgrtn-btn-go-to-step,
+.popup-signup-form-wrapper .intgrtn-form-signup-3-steps .intgrtn-btn-submit {
+    background-color: #F44336;
+    max-width: 280px;
+    color: #fff;
+    font-weight: 300;
+    width: 100%;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 100px;
+    height: 60px;
+    font-size: 18px;
+    margin: 35px auto 0;
+    font-family: "Gotham Pro";
+    display: block;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.main-signup-form-wrapper .intgrtn-form-signup-3-steps .intgrtn-btn-go-to-step:hover,
+.main-signup-form-wrapper .intgrtn-form-signup-3-steps .intgrtn-btn-submit:hover,
+.popup-signup-form-wrapper .intgrtn-form-signup-3-steps .intgrtn-btn-go-to-step:hover,
+.popup-signup-form-wrapper .intgrtn-form-signup-3-steps .intgrtn-btn-submit:hover {
+    background-color: #9e0707;
+}
